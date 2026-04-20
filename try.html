@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laa's Bag Store - Business Profile</title>
+    <style>
+        /* CSS Internal */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f9;
+            margin: 0;
+            padding: 20px;
+            color: #2c3e50;
+        }
+
+        /* Layout Flexbox */
+        .container {
+            display: flex;
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* Kolom Kiri: Profil & Produk berfoto */
+        .sidebar {
+            flex: 1.2; /* Sedikit lebih lebar untuk memuat foto */
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        /* Kolom Kanan: Detail Bisnis */
+        .main-content {
+            flex: 1.8;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+
+        h1 {
+            color: #1a4a7a;
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: #4a90e2;
+            border-bottom: 2px solid #f0f4f8;
+            padding-bottom: 8px;
+            font-size: 20px;
+        }
+
+        /* Grid Produk untuk Sidebar */
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 kolom di dalam sidebar */
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .product-box {
+            background-color: #fdfdfd;
+            border: 1px solid #ebf1f6;
+            padding: 10px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .product-box img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        .product-name {
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .btn-beli {
+            display: block;
+            padding: 6px;
+            background-color: #4a90e2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 11px;
+        }
+
+        .contact-box {
+            background-color: #f0f6ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        /* Responsif */
+        @media (max-width: 850px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <aside class="sidebar">
+            <h1>Laa's Bag Store</h1>
+            <p style="font-size: 14px; color: #7f8c8d;"><em>Tas stylish untuk tampil percaya diri</em></p>
+            
+            <h2>Koleksi Produk</h2>
+            <div class="product-grid">
+                <div class="product-box">
+                    <img src="Image/tas6.jpeg" alt="Tas Selempang" width="200">
+                    <span class="product-name">Tas Selempang</span>
+                    <a href="https://id.shp.ee/5h1mLgKV" class="btn-beli" target="_blank">Beli</a>
+                </div>
+                <div class="product-box">
+                    <img src="Image/tas7.jpeg" alt="Tote Bag">
+                    <span class="product-name">Tote Bag</span>
+                    <a href="https://id.shp.ee/v6jBybd7" class="btn-beli" target="_blank">Beli</a>
+                </div>
+                <div class="product-box">
+                    <img src="Image/tas8.jpeg" alt="Tas Ransel">
+                    <span class="product-name">Tas Ransel</span>
+                    <a href="https://id.shp.ee/9zB6f9mk" class="btn-beli" target="_blank">Beli</a>
+                </div>
+                <div class="product-box">
+                    <img src="Image/tas9.jpeg" alt="Tas Mini">
+                    <span class="product-name">Tas Mini</span>
+                    <a href="https://id.shp.ee/dWh35Y1P" class="btn-beli" target="_blank">Beli</a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section>
+                <h2>Profil Usaha</h2>
+                <p>
+                    <strong>Laa's Bag Store</strong> adalah usaha fashion yang menghadirkan tas wanita dengan desain modern dan kekinian. 
+                    Menggunakan bahan berkualitas tinggi, tas kami siap menemani aktivitas harian mulai dari kuliah hingga acara pesta.
+                </p>
+                <p>
+                    Desainnya yang <em>versatile</em> membuatnya mudah dipadukan dengan berbagai outfit, menjadikannya pilihan tepat untuk kamu yang ingin tampil standout.
+                </p>
+            </section>
+
+            <section>
+                <h2>Kenapa Memilih Kami?</h2>
+                <ul style="line-height: 1.8;">
+                    <li><strong>Eksklusif:</strong> Produk dibuat dalam jumlah terbatas.</li>
+                    <li><strong>Kualitas:</strong> Bahan premium yang tahan lama.</li>
+                    <li><strong>Harga:</strong> Tetap terjangkau untuk mahasiswa & pekerja.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Hubungi Kami</h2>
+                <div class="contact-box">
+                    <p>📧 <strong>Email:</strong> nuurrfdhlaa@gmail.com</p>
+                    <p>📱 <strong>WhatsApp:</strong> 081296116360</p>
+                    <p>📍 <strong>Lokasi:</strong> Medan, Indonesia</p>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>
